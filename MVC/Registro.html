@@ -17,6 +17,7 @@
 
         <nav class="navbar">
             <ul>
+                <li><a href="/ProyectoDiplomado/index.html">Inicio</a></li>
                 <li><a href="/ProyectoDiplomado/Producto.html">Productos</a>
                     <ul class="sublista">
                         <li><a href="">Mas vendidos</a></li>
@@ -28,6 +29,7 @@
                 </li>
                 <li><a href="">Ofertas</a></li>
                 <li><a href="">Contactenos</a></li>
+                
             </ul>
             <!-- <div class="usuario"><img src="/ProyectoDiplomado/Imagenes/user.png" alt="iconoImagen"></div>             -->
             <!-- <a class="entrar" href="#">Login</a> -->
@@ -36,31 +38,59 @@
 
     </header>
     
-    <div class="cont-form">
-        <form action="" method="post">
-            <h2>Formulario de Registro</h2>
+    <div class="caja-formularios">
+
+        <div class="cont-form-registro">
+            <form action="" method="post">
+                <h2>Formulario de Registro</h2>
+        
+                <div class="imputs">
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="ingrese su nombre">
+        
+                </div>
+        
+                <div class="imputs">
+                    <label for="">Apellido</label>
+                    <input type="text" placeholder="ingrese su pellido">
+        
+                </div>
+        
+                <div class="imputs">
+                    <label for="">Contraseña</label>
+                    <input type="password" placeholder="ingrese una contraseña">
+        
+                </div>
+        
+                <center><button type="button" class="btn-registro">Registrarme</button></center>
+        
+            </form>
     
-            <div class="imputs">
-                <label for="">Nombre</label>
-                <input type="text" placeholder="ingrese su nombre">
+        </div>
     
-            </div>
+        <!-- fornulario de iniciar sesion --------------------->
     
-            <div class="imputs">
-                <label for="">Apellido</label>
-                <input type="text" placeholder="ingrese su pellido">
+        <div class="cont-form-login">
+            <form action="" method="post">
+                <h2>Login</h2>
+        
+                <div class="imputs">
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="ingrese su nombre">
+        
+                </div>
+        
+                <div class="imputs">
+                    <label for="">Contraseña</label>
+                    <input type="password" placeholder="ingrese la contraseña">
+        
+                </div>
+        
+                <center><button type="button" class="btn-registro">Iniciar sesión</button></center>
+        
+            </form>
     
-            </div>
-    
-            <div class="imputs">
-                <label for="">Contraseña</label>
-                <input type="password" placeholder="ingrese una contraseña">
-    
-            </div>
-    
-            <center><button type="button" class="btn-registro">Registrarme</button></center>
-    
-        </form>
+        </div>
 
     </div>
 

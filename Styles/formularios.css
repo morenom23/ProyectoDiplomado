@@ -10,32 +10,51 @@
 
 body {
     background-color: black;
-    
+    height: 100vh;
 
 }
 
 /* FORMULARIO DE REGISTRO------------------------------- */
 
+.caja-formularios{
+    height: 100vh;
+    /* padding-top: 70px; */
+    background-image: url(https://images2.alphacoders.com/626/626052.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.cont-form-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(15%);
+    display: none;
+}
+
 form{
     margin: 0 auto;
-    max-width: 18%;
-    transform: translateY(15%);
-    color: blueviolet;
+    max-width: 16%;
+    color: white;
     border-top: 1px groove blueviolet;
     box-shadow: 0px 5px 0px 3px blueviolet;
     padding: 20px;
     border-radius: 20px;
+    transition: 0.3s ease-in-out;
     
-    background-position: center;
-    background-size: cover;
+}
 
+form:hover{
+    box-shadow: 0px 5px rgb(76, 151, 236), 0px 3px rgb(76, 151, 236);
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
 }
 
 form h2{
     text-align: center;
     margin-bottom: 30px;
     line-height: 1.2;
-    text-decoration:underline 0.5px blueviolet;
     color: white; 
     
 }
@@ -52,18 +71,22 @@ form .imputs{
     
 }
 
+::placeholder{
+    color: rgb(77, 76, 76);
+}
 .imputs input{
     padding: 4px;
     border-radius: 5px;
     border-color: blueviolet;
-    outline: none;
-    
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
     
 }
 
 
 .btn-registro{
-    padding: 3px 8px;
+    padding: 4px 8px;
     cursor: pointer;
     background-color: blueviolet;
     color: white;
@@ -71,18 +94,37 @@ form .imputs{
     border-radius: 5px;
     margin: 10px 0px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     transition: all .3s ease-in-out;
     
 }
 
 .btn-registro:hover{
     background-color: white;
-    color: black;
+    color: blueviolet;
+   
     
 }
 
 footer{
-    box-shadow: 0px 0px 20px blueviolet;
+    box-shadow: 0px 0px 10px blueviolet;
+    margin-top: 10px;
+    
+}
+
+.cont-form-login{
+    transform: translateY(17%);
+    /* display: none; */
+   
+}
+
+.cont-form-login form h2{
+    text-decoration: underline;
+    margin-bottom: 30px;
+    
+}
+
+.cont-form-login form .btn-registro{
+    margin-top: 20px;
     
 }
